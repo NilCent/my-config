@@ -1,0 +1,22 @@
+theme = "hex_toxic"
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[keys.normal]
+X = "select_line_above"
+# Print the current line's git blame information to the statusline.
+space.space.b = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
+
