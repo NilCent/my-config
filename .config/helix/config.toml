@@ -1,4 +1,4 @@
-theme = "hex_toxic"
+theme = "everforest_dark"
 
 [editor.auto-save]
 focus-lost = true
